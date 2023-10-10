@@ -34,15 +34,9 @@ function App() {
         <p>Selected key React concepts you should know about</p>
       </header>
       <ul id="concepts">
-        <li>
-          <ListItem className="concept" item={concepts[0]} />
-        </li>
-        <li>
-          <ListItem className="concept" item={concepts[1]} />
-        </li>
-        <li>
-          <ListItem className="concept" item={concepts[2]} />
-        </li>
+        <ListItem className="concept" item={concepts[0]} />
+        <ListItem className="concept" item={concepts[1]} />
+        <ListItem className="concept" item={concepts[2]} />
       </ul>
     </div>
   );
