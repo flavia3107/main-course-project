@@ -2,6 +2,7 @@ import keyConceptsImage from './assets/images/key-concepts.png';
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
+import { ListItem } from '../src/list-item/ListItem'
 
 const concepts = [
   {
@@ -33,10 +34,14 @@ function App() {
         <p>Selected key React concepts you should know about</p>
       </header>
       <ul id="concepts">
-        <li className="concept">
-          <img src="TODO: IMAGE" alt="TODO: TITLE" />
-          <h2>TODO: TITLE</h2>
-          <p>TODO: DESCRIPTION</p>
+        <li>
+          <ListItem className="concept" item={concepts[0]} />
+        </li>
+        <li>
+          <ListItem className="concept" item={concepts[1]} />
+        </li>
+        <li>
+          <ListItem className="concept" item={concepts[2]} />
         </li>
       </ul>
     </div>
